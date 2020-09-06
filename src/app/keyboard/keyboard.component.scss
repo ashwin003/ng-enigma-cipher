@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-gap: 1em;
+
+    user-select: none;
+
+    .character{
+        display: inline-block;
+        padding: 0.5em;
+        background: $background;
+        text-align:center;
+        font-weight:bold;
+        border-radius: $border-radius;
+        cursor: pointer;
+        color: $main-text-color;
+        box-shadow: 0 0 $shadow-spread $shadow-color;
+    } 
+}

@@ -1,0 +1,33 @@
+@import "../styles.scss";
+
+.content {
+    display: inline-block;
+    width: 75vw;
+    height: 90vh;
+    position: relative;
+    left: 12.5vw;
+    top: 5vh;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: $main-text-color;
+        margin-top: 0;
+        user-select: none;
+    }
+
+    .rotors {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+
+    h1,
+    .spacers {
+        margin-bottom: 1.5em;
+    }
+}

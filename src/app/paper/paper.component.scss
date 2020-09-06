@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+.paper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1em;
+
+    .text {
+        padding: 0.5em;
+        border-radius: $border-radius;
+        box-shadow: 0 0 $shadow-spread $shadow-color;
+        background: $background;
+
+        .title {
+            text-transform: uppercase;
+            margin-top: 0.5em;
+            text-align: center;
+            color: $main-text-color;
+        }
+    }
+}
